@@ -1,3 +1,4 @@
 # Diagrama Uml
 
-!https://imgur.com/G53JlQX 
+
+![imatge](https://i.imgur.com/G53JlQX.png)
