@@ -53,4 +53,4 @@ class OrdreEnviament:
         self.import_ = import_  # Import de l'enviament
         self.estat = estat  # Estat de l'ordre d'enviament (per exemple: pendent, enviat)
 
-# Les relacions entre les classes es representen fora del codi amb comentaris per mantenir la claredat i la coherència amb el diagrama UML.
+
