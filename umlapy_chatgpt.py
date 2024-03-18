@@ -52,6 +52,8 @@ llibre = Llibre("Titol del llibre", 2022, Categoria("Definicio de categoria"), A
 copia1 = Copia("codi1", "ubicacio1")
 copia2 = Copia("codi2", "ubicacio2")
 lector = Lector("Nom del lector", "Cognoms del lector", "DNI del lector", "Adreca del lector")
-prestec1 = Prestec(date(2024, 3, 18), date(2024, 4, 18), llibre, llector)
-prestec2 = Prestec(date(2024, 3, 20), date(2024, 4, 20), llibre, llector)
-usuari_multa = UsuariMulta(date(2024, 3, 18), date(2024, 3, 25), llector)
+prestec1 = Prestec(date(2024, 3, 18), date(2024, 4, 18), llibre, lector)     
+prestec2 = Prestec(date(2024, 3, 20), date(2024, 4, 20), llibre, lector)       #noms de variables incorrectes
+usuari_multa = UsuariMulta(date(2024, 3, 18), date(2024, 3, 25), lector)
+
+#Eliminar relacións sobrants
