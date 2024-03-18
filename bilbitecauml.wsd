@@ -1,0 +1,59 @@
+@startuml
+
+class Llibre {
+    + títol: String
+    + any: int
+    + categoria: Categoria
+    + autor: Autor
+    + editorial: Editorial
+}
+
+class Editorial {
+    + nom: String
+    + nacionalitat: String
+}
+
+class Categoria {
+    + definició: String
+}
+
+class Autor {
+    + nom: String
+    + dataNaixement: Date
+}
+
+class Copia {
+    + codi: String
+    + ubicació: String
+}
+
+class Préstec {
+    + dataInici: Date
+    + dataFinal: Date
+    + llibre: Llibre
+    + lector: Lector
+}
+
+class Lector {
+    + nom: String
+    + cognoms: String
+    + DNI: String
+    + adreça: String
+}
+
+class UsuariMulta {
+    + dataInici: Date
+    + dataFinal: Date
+    + lector: Lector
+}
+
+Llibre "1" --* "còpies" Copia
+Llibre "1" --* "préstecs" Préstec
+Préstec "1" --* "lector" Lector
+Lector "1" --* "usuarimulta" UsuariMulta
+
+
+Llibre "1" --* "editorial" Editorial
+Categoria "1" --* "llibres" Llibre
+Autor "1" --* "llibre" Llibre
+@enduml
